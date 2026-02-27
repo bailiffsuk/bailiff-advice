@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help with Council Tax - Stop the Bailiff</title>
+    <meta name="description" content="Get expert help with council tax debt. Learn about your options, how to stop bailiff action, and arrange affordable payments.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+    /* Modern Reset and Base Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e67e22;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.logo span {
+    color: var(--secondary-color);
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    min-height: calc(100vh - 300px);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Feature Cards */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Form Styles */
+.form-container {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group input {
+    width: auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+/* Progress Bar */
+.progress-bar {
+    height: 10px;
+    background-color: var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: width 0.3s;
+}
+
+/* Information Sections */
+.info-section {
+    background: var(--light-bg);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.info-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.info-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.info-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.info-card ul {
+    list-style-position: inside;
+    color: var(--text-color);
+}
+
+.info-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Fee Table */
+.fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.fee-table th,
+.fee-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.fee-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.fee-table tr:hover {
+    background-color: var(--light-bg);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: var(--secondary-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Alert Messages */
+.alert {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn-group .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-gavel"></i>
+                <h1>Stop the <span>Bailiff</span></h1>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="help-with-bailiffs.html">Help with Bailiffs</a></li>
+                    <li><a href="help-with-council-tax.html">Council Tax Help</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Help with Council Tax Debt</h2>
+            <p>Expert advice on dealing with council tax arrears and stopping bailiff action</p>
+        </section>
+
+        <div class="info-section">
+            <h2>Understanding Council Tax Debt</h2>
+            <p>Council tax arrears can quickly escalate if not addressed. When you fall behind on payments, your local council can take enforcement action, which may include:</p>
+            <ul>
+                <li>Issuing a summons and obtaining a liability order</li>
+                <li>Deducting payments directly from your wages or benefits</li>
+                <li>Passing the debt to enforcement agents (bailiffs)</li>
+                <li>In extreme cases, committal to prison (though very rare)</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Options for Dealing with Council Tax Debt</h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>✓ Arrange a Payment Plan</h3>
+                    <p>Contact your local council to arrange an affordable repayment plan. Most councils are willing to accept reasonable offers if you can demonstrate you can't pay the full amount.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>✓ Check for Reductions</h3>
+                    <p>You may be eligible for:</p>
+                    <ul>
+                        <li>Council Tax Support (if you're on a low income)</li>
+                        <li>Single person discount (25% off)</li>
+                        <li>Disability reductions</li>
+                        <li>Exemptions for students or certain groups</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>✓ Challenge the Liability Order</h3>
+                    <p>If you believe the council tax bill is incorrect, you may be able to challenge it. Grounds for challenge include:</p>
+                    <ul>
+                        <li>Incorrect banding</li>
+                        <li>You're not the liable person</li>
+                        <li>The property should be exempt</li>
+                        <li>Procedural errors by the council</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>✓ Deal with Bailiffs</h3>
+                    <p>If bailiffs are already involved, you still have options. You can:</p>
+                    <ul>
+                        <li>Make a payment arrangement with the bailiff</li>
+                        <li>Apply to the court to suspend the liability order</li>
+                        <li>Seek professional debt advice</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Bailiff Fees for Council Tax</h2>
+            <p>When council tax debt is passed to bailiffs, you'll be liable for their fees as well. The current fee structure is:</p>
+            
+            <table class="fee-table">
+                <thead>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Fee</th>
+                        <th>What Happens</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Compliance Stage</strong></td>
+                        <td>£75</td>
+                        <td>Case passed to bailiff, notice sent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Enforcement Stage</strong></td>
+                        <td>£235 (plus 7.5% of debt over £1,500)</td>
+                        <td>First visit to your property</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sale Stage</strong></td>
+                        <td>£110 (plus 7.5% of debt over £1,500)</td>
+                        <td>Removal of goods for sale</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p><strong>Important:</strong> If you pay the full debt plus the compliance fee before the first visit, you can avoid the higher enforcement fee.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>What to Do If Bailiffs Are Coming</h2>
+            
+            <h3>Immediate Steps:</h3>
+            <ul>
+                <li><strong>Don't ignore the situation</strong> - it will only get worse</li>
+                <li><strong>Check the notice</strong> - ensure you've received proper 7-day notice</li>
+                <li><strong>Contact the bailiff company</strong> - try to arrange a payment plan</li>
+                <li><strong>Consider making a offer</strong> - based on what you can realistically afford</li>
+                <li><strong>Seek advice</strong> - from Citizens Advice or a debt charity</li>
+            </ul>
+            
+            <h3>If a Bailiff Visits:</h3>
+            <ul>
+                <li>You don't have to let them in</li>
+                <li>Speak through a window or use a door chain</li>
+                <li>Ask for identification and the liability order</li>
+                <li>Don't agree to pay more than you can afford</li>
+                <li>Don't sign anything you don't understand</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Debt Solutions for Council Tax</h2>
+            
+            <h3>Individual Voluntary Arrangement (IVA)</h3>
+            <p>While council tax can be included in an IVA, it's important to note that arrears from the current year may need special treatment. Benefits include:</p>
+            <ul>
+                <li>One affordable monthly payment</li>
+                <li>Interest and charges frozen</li>
+                <li>Legal protection from creditors</li>
+                <li>Remaining debt written off after term ends</li>
+            </ul>
+            
+            <h3>Debt Management Plan (DMP)</h3>
+            <p>A less formal arrangement where you make affordable payments to all creditors including the council. Interest may still be added.</p>
+            
+            <h3>Bankruptcy</h3>
+            <p>A last resort that writes off most debts including council tax, but has serious consequences including potential loss of your home.</p>
+        </div>
+
+        <div class="form-container">
+            <h3>Get Free Expert Help</h3>
+            <p>Our advisors can help you understand your options and find the best solution for your council tax debt.</p>
+            <a href="index.html#fact-finder" class="btn btn-primary">Take Our Free Fact Finder</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="help-with-bailiffs.html">Help with Bailiffs</a></li>
+                    <li><a href="help-with-council-tax.html">Council Tax Help</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i>  0203 996 3438</li>
+                    <li><i class="fas fa-envelope"></i> help@stopthebailiff.co.uk</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9am - 8pm</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span class="current-year">2024</span> Stop the Bailiff. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

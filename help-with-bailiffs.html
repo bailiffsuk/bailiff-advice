@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help with Bailiffs - Stop the Bailiff</title>
+    <meta name="description" content="Expert advice on dealing with bailiffs. Learn your rights, how to handle bailiff visits, and what bailiffs can and cannot do.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    /* Modern Reset and Base Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e67e22;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.logo span {
+    color: var(--secondary-color);
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    min-height: calc(100vh - 300px);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Feature Cards */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Form Styles */
+.form-container {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group input {
+    width: auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+/* Progress Bar */
+.progress-bar {
+    height: 10px;
+    background-color: var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: width 0.3s;
+}
+
+/* Information Sections */
+.info-section {
+    background: var(--light-bg);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.info-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.info-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.info-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.info-card ul {
+    list-style-position: inside;
+    color: var(--text-color);
+}
+
+.info-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Fee Table */
+.fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.fee-table th,
+.fee-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.fee-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.fee-table tr:hover {
+    background-color: var(--light-bg);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: var(--secondary-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Alert Messages */
+.alert {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn-group .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-gavel"></i>
+                <h1>Stop the <span>Bailiff</span></h1>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="help-with-bailiffs.html">Help with Bailiffs</a></li>
+                    <li><a href="help-with-council-tax.html">Council Tax Help</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Expert Help with Bailiffs</h2>
+            <p>Understanding your rights and options when dealing with bailiffs and enforcement agents.</p>
+        </section>
+
+        <div class="info-section">
+            <h2>What Can Bailiffs Take?</h2>
+            <p>Understanding what bailiffs can and cannot take is crucial when facing enforcement action. Here's what you need to know:</p>
+            
+            <h3>Items bailiffs CAN take:</h3>
+            <ul>
+                <li>Luxury items like televisions, games consoles, and jewellery</li>
+                <li>Vehicles that are not essential for your work or daily life</li>
+                <li>Money, banknotes, and coins</li>
+                <li>Shares and bonds</li>
+            </ul>
+            
+            <h3>Items bailiffs CANNOT take:</h3>
+            <ul>
+                <li>Essential household items like your cooker, washing machine, and fridge</li>
+                <li>Tools, books, or equipment you need for your job or study (up to a total value of £1,350)</li>
+                <li>Items that belong to someone else</li>
+                <li>Your phone or computer if you need it for work or study</li>
+                <li>Your pet</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>How Should You Interact with Bailiffs?</h2>
+            
+            <h3>If a Bailiff Visits Your Home:</h3>
+            <ul>
+                <li>You don't have to open the door - you can speak through a window or letterbox</li>
+                <li>Don't let them in unless you understand your rights and the implications</li>
+                <li>If you do let them in, they can return and re-enter without permission</li>
+                <li>Ask to see their identification and enforcement documents</li>
+                <li>Check the debt is valid and the fees are correct</li>
+                <li>Never let them in if they haven't given proper notice</li>
+            </ul>
+            
+            <h3>Safe Communication Tips:</h3>
+            <ul>
+                <li>Keep doors locked and windows closed</li>
+                <li>Use a chain on the door if you need to open it</li>
+                <li>Don't let them into your home unless you're certain of your rights</li>
+                <li>Ask for everything in writing</li>
+                <li>Don't agree to payment plans you can't afford</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Bailiff Charges and Fees</h2>
+            <p>Understanding the new fee structure introduced to make bailiff charges more straightforward:</p>
+            
+            <table class="fee-table">
+                <thead>
+                    <tr>
+                        <th>Fee Type</th>
+                        <th>Amount</th>
+                        <th>When It Applies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Compliance Fee</strong></td>
+                        <td>£75</td>
+                        <td>When your case is transferred from the local authority to the bailiff</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Enforcement Fee</strong></td>
+                        <td>£235 + 7.5% of debts over £1,500</td>
+                        <td>When bailiffs make their first visit to your premises</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sale Fee</strong></td>
+                        <td>£110 + 7.5% of debts over £1,500</td>
+                        <td>When bailiffs start removing or preparing items for sale</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p><strong>Important:</strong> Bailiffs must give seven days' notice before a visit, and can only visit between 6am and 9pm.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>When Can Bailiffs Use Force?</h2>
+            <p>Technically, bailiffs are not permitted to use force to enter your property. However, there are certain situations in which the "reasonable force" rule comes into play:</p>
+            <ul>
+                <li>When they have obtained a court order</li>
+                <li>When you have previously granted them peaceful entry</li>
+                <li>For some specific debts like unpaid criminal fines or tax</li>
+            </ul>
+            <p>This does NOT permit them to take extreme measures, such as pushing past you or breaking a window.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>The Difference Between Bailiffs and Enforcement Agents</h2>
+            <p>There is often confusion between bailiffs and enforcement agents, but they are essentially the same. In a recent review of bailiff regulations, they were renamed "enforcement agents" and subjected to a simplified set of rules. The changes not only encompass what they can or cannot do when visiting your property but also include new fees that may be applied at different stages of the process.</p>
+        </div>
+
+        <div class="form-container">
+            <h3>Need Immediate Help?</h3>
+            <p>Complete our quick fact finder to get personalized advice for your situation.</p>
+            <a href="index.html#fact-finder" class="btn btn-primary">Take Our Free Fact Finder</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="help-with-bailiffs.html">Help with Bailiffs</a></li>
+                    <li><a href="help-with-council-tax.html">Council Tax Help</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 0203 996 3438</li>
+                    <li><i class="fas fa-envelope"></i> help@stopthebailiff.co.uk</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9am - 8pm</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span class="current-year">2024</span> Stop the Bailiff. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
